@@ -175,7 +175,7 @@ function validateData(data) {
   }
   
   // Validate vehicle number
-  if (!['6118', '2751'].includes(data.vehicle)) {
+  if (!['1', '2'].includes(data.vehicle)) {
     return false;
   }
   
@@ -218,7 +218,7 @@ function testPost() {
     postData: {
       contents: JSON.stringify({
         date: '2024-01-15',
-        vehicle: '6118',
+        vehicle: '1',
         petrolPump: 'HP KSR',
         speedometer: 12500,
         pricePerLiter: 105.50,
@@ -240,12 +240,12 @@ function initializeSampleData() {
   const sheet = getSheet();
   
   const sampleData = [
-    ['2024-01-01', '6118', 'HP KSR', 10000, 105.00, 30, 3150],
-    ['2024-01-08', '6118', 'BP MAJ', 10450, 106.50, 28, 2982],
-    ['2024-01-15', '6118', 'HP KSR', 10890, 105.80, 29, 3068.2],
-    ['2024-01-03', '2751', 'IOL MNP', 25000, 105.20, 32, 3366.4],
-    ['2024-01-10', '2751', 'BP ADH', 25480, 106.00, 30, 3180],
-    ['2024-01-17', '2751', 'HP MNP', 25920, 105.90, 31, 3282.9]
+    ['2024-01-01', '1', 'HP KSR', 10000, 105.00, 30, 3150],
+    ['2024-01-08', '1', 'BP MAJ', 10450, 106.50, 28, 2982],
+    ['2024-01-15', '1', 'HP KSR', 10890, 105.80, 29, 3068.2],
+    ['2024-01-03', '2', 'IOL MNP', 25000, 105.20, 32, 3366.4],
+    ['2024-01-10', '2', 'BP ADH', 25480, 106.00, 30, 3180],
+    ['2024-01-17', '2', 'HP MNP', 25920, 105.90, 31, 3282.9]
   ];
   
   sampleData.forEach(row => {
