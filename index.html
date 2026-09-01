@@ -801,7 +801,7 @@
         }
 
         function renderBestVehicle(data) {
-            const vehicles = ['6118', '2751'];
+            const vehicles = ['V1', 'V2'];
             let bestVehicle = null;
             let bestMileage = 0;
 
@@ -827,7 +827,7 @@
         }
 
         function renderVehicleDashboard(data) {
-            const vehicles = ['6118', '2751'];
+            const vehicles = ['V1', 'V2'];
             let html = '<div class="card"><h2>🚗 Vehicle-wise Dashboard</h2>';
 
             vehicles.forEach(vehicle => {
@@ -893,7 +893,7 @@
         function renderPerEntryMileage(data) {
             let html = '<div class="card"><h2>⛽ Mileage Per Entry</h2><div class="mileage-list">';
 
-            const vehicles = ['6118', '2751'];
+            const vehicles = ['V1', 'V2'];
             
             vehicles.forEach(vehicle => {
                 const vehicleData = data.filter(e => e.vehicle === vehicle);
