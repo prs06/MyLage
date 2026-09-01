@@ -99,7 +99,7 @@ Open your app and add your first fuel entry.
 2. Go to **Capture** tab (default)
 3. Fill in the form:
    - Date (defaults to today)
-   - Vehicle Number (6118 or 2751)
+   - Vehicle Number (v1 or v2)
    - Petrol Pump (select from dropdown)
    - Speedometer Reading (in km)
    - Price Per Liter (in INR)
@@ -187,7 +187,7 @@ To add more vehicles, edit the dropdown in `index.html`:
 
 And update validation in `google-apps-script.js`:
 ```javascript
-if (!['6118', '2751', 'YOUR_NEW_VEHICLE'].includes(data.vehicle)) {
+if (!['v1', 'v2', 'YOUR_NEW_VEHICLE'].includes(data.vehicle)) {
     return false;
 }
 ```
@@ -310,7 +310,7 @@ Use Google Apps Script triggers:
 | Column | Type | Description |
 |--------|------|-------------|
 | Date | Date | Refill date (YYYY-MM-DD) |
-| Vehicle | Text | Vehicle number (6118, 2751) |
+| Vehicle | Text | Vehicle number (v1, v2) |
 | Petrol Pump | Text | Pump name |
 | Speedometer | Number | Odometer reading (km) |
 | Price | Number | Price per liter (INR) |
